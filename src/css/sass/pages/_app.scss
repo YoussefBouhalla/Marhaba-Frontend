@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+
+body {
+    background-color: $primary_color;
+    font-family: 'poppins';
+}
+
+.content {
+    box-shadow: $main_shadow;
+    background-color: $primary_color;
+    max-width: 1280px;
+    padding: 0px 23px;
+
+    .main {
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font_24px {
+  font-size: 24px;
+}
+
+.font_20px {
+  font-size: 20px;
+}
+
+.font_14px {
+  font-size: 14px;
+}
+
+.font_12px {
+  font-size: 12px;
+}
+
+.font_10px {
+  font-size: 10px;
+}
+
+.font_8px {
+  font-size: 8px;
+}
+
+.font_400 {
+  font-weight: 400;
+}
+
+.font_500 {
+  font-weight: 500;
+}
+
+.font_600 {
+  font-weight: 600;
+}
+
+.font_700 {
+  font-weight: 700;
+}
+
+.auth_actions button {
+  height: 28px;
+  padding: 0px 30px;
+  border-radius: 8px;
+  color: #ECECEC;
+  border: 2px solid #C69048;
+  transition: all 200ms ease-in;
+}
+.auth_actions button:hover {
+  background-color: #B27D36 !important;
+  border: 2px solid #B27D36 !important;
+}
+.auth_actions button:first-child {
+  background-color: transparent;
+}
+.auth_actions button:last-child {
+  background-color: #C69048;
+}
+
+.login_form button {
+  color: #FFFFFF;
+  background-color: #C69048;
+  border-radius: 4px;
+  border: none;
+  height: 32px;
+  transition: all 200ms ease-in;
+}
+.login_form button:hover {
+  background-color: #B27D36;
+}
+
+.close_button {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  right: -40px;
+  top: 5px;
+  border: none;
+  background-color: rgba(240, 240, 240, 0.341);
+  transition: all 50ms ease-in;
+}
+.close_button:hover {
+  background-color: rgba(240, 240, 240, 0.6);
+}
+
+.input_group .error_message {
+  color: #FF8888;
+}
+.input_group .input_holder {
+  height: 32px;
+  border: 1px solid #9f9f9f57;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+.input_group .input_holder .input_icon {
+  height: 100%;
+}
+.input_group .input_holder hr {
+  transform: rotate(90deg);
+  width: 18px;
+}
+.input_group .input_holder input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 500;
+  width: 100%;
+}
+.input_group .input_holder input::placeholder {
+  font-size: 10px;
+  font-weight: 500;
+  color: #A9A9A9;
+}
+.input_group .input_holder select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 500;
+  width: 100%;
+}
+.input_group .input_holder select::placeholder {
+  font-size: 10px;
+  font-weight: 500;
+  color: #A9A9A9;
+}
+
+.popup_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #07070749;
+}
+
+.login_popup {
+  width: 100%;
+  max-width: 384px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 25px;
+}
+.login_popup .login_form {
+  gap: 5px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100vw;
+  border-radius: 0px 0px 8px 8px;
+  background-color: #262626;
+}
+nav .navbar_main {
+  padding: 10px 23px;
+}
+nav .navbar_main .auth_actions {
+  gap: 7px;
+}
+nav .navbar_main .navbar_items {
+  gap: 42px;
+  list-style: none;
+  color: #ECECEC;
+}
+nav .navbar_main .navbar_items li {
+  cursor: pointer;
+  position: relative;
+}
+nav .navbar_main .navbar_items li::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  border-radius: 10px;
+  background-color: #C69048;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+nav .navbar_main .navbar_items li:hover::before {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  nav .navbar_main {
+    width: 1280px;
+  }
+}
+body {
+  background-color: #F8F4F1;
+  font-family: "poppins";
+}
+
+.content {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #F8F4F1;
+  max-width: 1280px;
+  padding: 0px 23px;
+}
+.content .main {
+  margin-top: 48px;
+}
+
+/*# sourceMappingURL=main.css.map */
