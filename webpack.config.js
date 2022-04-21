@@ -16,7 +16,11 @@ mode: 'development',
   {
    test: /\.css$/,
    use: ["style-loader", "css-loader"]
-  }
+  },
+  {
+    test: /\.svg/,
+    use: ["@svgr/webpack"]
+  },
 ]},
  plugins: [htmlPlugin]
 };
