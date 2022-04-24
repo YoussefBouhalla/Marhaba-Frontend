@@ -1,12 +1,12 @@
 import React from 'react'
 import Input from '../../ui/Input'
 import MessageIcon from  '../../../assets/icons/message.svg';
-import LockIcon from  '../../../assets/icons/key-hole.svg';
+import LockIcon from  '../../../assets/icons/keyHole.svg';
 import { useDispatch } from 'react-redux'
 import { closePopupAction } from '../../../actions/popupActions';
 
 function Login() {
-  
+
   const dispatch = useDispatch();
 
   const closePopup = () => {

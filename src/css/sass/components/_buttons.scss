@@ -55,3 +55,52 @@
         background-color: rgba(240, 240, 240, 0.6);
     }
 }
+
+.hero_button {
+    color: $secondary_color;
+    padding: 0 75px ;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: $color_gradient;
+    height: 33px;
+}
+
+.service_card_button {
+    color: $secondary_color;
+    padding: 0 47px ;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: $color_gradient;
+    height: 28px;
+}
+
+.footer_button {
+    background-color: transparent;
+    padding: 6px 42px;
+    border-radius: 8px;
+    width: fit-content;
+    color: $para_white;
+    border: 2px solid $details_color;
+    transition: all 200ms ease-in;
+}
+
+.round_contact {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    border: 2px solid $input_color;
+    background-color: $details_color;
+    position: absolute;
+    bottom: -23.5px;
+    right: 21px;
+}
+
+.social_button {
+    height: 38px;
+    width: 38px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}

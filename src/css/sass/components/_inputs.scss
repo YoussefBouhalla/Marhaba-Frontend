@@ -7,7 +7,7 @@
     }
 
     .input_holder {
-        height: 32px;
+        height: fit-content;
         border: 1px solid #9f9f9f57;
         border-radius: 4px;
         background-color: $input_color;
@@ -25,6 +25,7 @@
             background-color: transparent;
             border: none;
             outline: none;
+            height: 32px;
             font-size: 10px;
             font-weight: 500;
             width: 100%;
@@ -40,6 +41,24 @@
             background-color: transparent;
             border: none;
             outline: none;
+            height: 32px;
+            font-size: 10px;
+            font-weight: 500;
+            width: 100%;
+            &::placeholder {
+                font-size: 10px;
+                font-weight: 500;
+                color: $placeholder_color;
+            }
+        }
+
+        textarea {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            height: 80px;
+            resize: none;
             font-size: 10px;
             font-weight: 500;
             width: 100%;

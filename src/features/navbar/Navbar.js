@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../assets/icons/logo.svg'
 import { useDispatch } from 'react-redux'
 import { openLoginAction, openRegisterAction } from '../../actions/popupActions';
+import Button from '../ui/Button';
 
 function Navbar() {
 
@@ -32,8 +33,8 @@ function Navbar() {
             {/* authentication */}
             
             <div className='auth_actions d-flex'>
-                <button className='font_12px font_500' onClick={openLoginPopup} >Login</button>
-                <button className='font_12px font_500' onClick={openRegisterPopup} >Register</button>
+                <Button content='login' classes='font_12px font_500' onClick={openLoginPopup} />
+                <Button content='Register' classes='font_12px font_500' onClick={openRegisterPopup} />
             </div>
         </div>
     </nav>
