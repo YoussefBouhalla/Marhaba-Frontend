@@ -1,0 +1,25 @@
+ @import '../abstracts/variables';
+
+.bread_crumb {
+    height: 25px;
+    width: fit-content;
+    padding: 4px 17px;
+    background: $color_gradient;
+    border-radius: 15px;
+    color: $secondary_color;
+}
+
+.tag {
+    position: absolute;
+    left: -7px;
+    top: 15px;
+    background-color: $details_color;
+    border-radius: 3px 9px 9px 3px;
+    color: $secondary_color;
+
+    
+
+    &:last-child {
+        top: 38px !important;
+    }
+}

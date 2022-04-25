@@ -30,5 +30,8 @@ mode: 'development',
     ],
   },
 ]},
- plugins: [htmlPlugin]
+devServer: {
+  historyApiFallback: true,
+},
+plugins: [htmlPlugin]
 };

@@ -1,0 +1,38 @@
+@import '../abstracts/variables';
+
+.recommended_section {
+    background-color: $secondary_color;
+    box-shadow: $card_shadow;
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+    width: 100%;
+    max-width: 410px;
+
+    .rec_list {
+        padding: 2px;
+        gap: 15px;
+
+        .rec_item{
+            padding: 10px;
+            gap: 11px;
+            background-color: $input_color;
+            border-radius: 8px;
+            box-shadow: $card_shadow;
+
+            .image_holder{
+                width: 100%;
+                max-width: 129px;
+                background-color: $details_color;
+                border-radius: 8px;
+            }
+
+            .rec_tag {
+                width: fit-content;
+                color: $secondary_color;
+                border-radius: 50px;
+                background-color: $details_color;
+            }
+        }
+    }
+}

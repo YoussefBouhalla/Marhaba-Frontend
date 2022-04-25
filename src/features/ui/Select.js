@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Select({options, errorMessage, Icon}) {
+function Select({subject ,options, errorMessage, Icon, classes}) {
   return (
-        <div className='input_group d-flex flex-column'>
+        <div className={'input_group d-flex flex-column ' + classes}>
             <div className='input_holder d-flex gap-2 px-2'>
                 <div className='input_icon'>
                     <Icon />
                 </div>
                 <hr />
                 <select>
-                    <option value="none" disabled selected hidden>Choose a role</option>
+                    <option value="none" disabled selected hidden>Choose a {subject}</option>
                     {options.map(opt => 
                         (<option value={opt}>{opt}</option>)
                     )}

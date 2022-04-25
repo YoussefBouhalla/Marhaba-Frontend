@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Input({placeholder, type, errorMessage , Icon}) {
+function Input({placeholder, type, errorMessage , Icon, classes}) {
   return (
-      <div className='input_group d-flex flex-column'>
+      <div className={'input_group d-flex flex-column ' + classes}>
           <div className='input_holder d-flex gap-2 px-2'>
             {Icon && 
               <>
