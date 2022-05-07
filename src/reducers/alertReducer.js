@@ -1,9 +1,9 @@
-const authReducer = (state = false , action) => {
+const alertReducer = (state = false , action) => {
     switch (action.type) {
-        case 'LOGIN':
+        case 'OPENALERT':
             return action.payload;
 
-        case 'LOGOUT':
+        case 'CLOSEALERT':
             return false;
     
         default:
@@ -11,4 +11,4 @@ const authReducer = (state = false , action) => {
     }
 }
 
-export default authReducer;
+export default alertReducer;
