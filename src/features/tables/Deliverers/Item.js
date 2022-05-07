@@ -4,10 +4,11 @@ function Item() {
   return (
     <tr className='font_10px font_600' >
         <td>Image</td>
-        <td>Pizza Pepperoni</td>
-        <td>kdazoinfoinzaosnfzoqsfoiza</td>
-        <td>21$</td>
-        <td>main</td>
+        <td>youssefbh2</td>
+        <td>Youssef</td>
+        <td>Bouhalla</td>
+        <td>yo.bouhalla@gmail.com</td>
+        <td>+212656392583</td>
     </tr>
     )
 }

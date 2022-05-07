@@ -1,6 +1,4 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
-import Background from '../features/popups/Background'
 import Button from '../features/ui/Button';
 import heroIllustration from '../assets/images/hero.png'
 import aboutIllustration from '../assets/images/about.png'
@@ -9,7 +7,6 @@ import ShopIcon from '../assets/icons/shop.svg'
 import Footer from '../features/footer/Footer';
 
 function Home() {
-    const popup = useSelector(state => state.popup);
 
   return (
       <>
@@ -75,9 +72,6 @@ function Home() {
                     </p>
                 </div>
             </div>
-
-            {/* popups */}
-            {popup && <Background/>}
             
         </div>
 

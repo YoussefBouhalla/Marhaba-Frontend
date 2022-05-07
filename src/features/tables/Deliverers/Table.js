@@ -8,10 +8,11 @@ function Table() {
             <thead className='table-light'>
               <tr className='font_12px font_600'>
                 <th scope="col">Image</th>
-                <th scope="col">Title</th>
-                <th scope="col">Description</th>
-                <th scope="col">Price</th>
-                <th scope="col">Type</th>
+                <th scope="col">Username</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
               </tr>
             </thead>
             <tbody>

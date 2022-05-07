@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Select({subject ,options, errorMessage, Icon, classes}) {
+function Select({subject ,options, errorMessage, Icon, classes, onChange}) {
   return (
         <div className={'input_group d-flex flex-column ' + classes}>
             <div className='input_holder d-flex gap-2 px-2'>
@@ -8,10 +8,10 @@ function Select({subject ,options, errorMessage, Icon, classes}) {
                     <Icon />
                 </div>
                 <hr />
-                <select>
+                <select onChange={onChange} >
                     <option value="none" disabled selected hidden>Choose a {subject}</option>
                     {options.map(opt => 
-                        (<option value={opt}>{opt}</option>)
+                        (<option key={opt} value={opt}>{opt}</option>)
                     )}
                 </select>
             </div>
