@@ -179,6 +179,55 @@
   border-radius: 4px;
 }
 
+.profile_button {
+  height: 28px;
+  padding: 0px 7px;
+  border-radius: 28px;
+  border: none;
+  color: #ECECEC;
+  transition: all 200ms ease-in;
+  background-color: rgba(123, 123, 123, 0.205);
+}
+.profile_button .image {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  left: 0;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.profile_button:hover {
+  background-color: rgba(123, 123, 123, 0.974) !important;
+}
+
+.info_card, .bot_cards .info_card, .top_cards .info_card {
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #262626;
+  padding: 10px 24px;
+  color: #ECECEC;
+  border-left: 7px solid #C69048;
+}
+.info_card div, .bot_cards .info_card div, .top_cards .info_card div {
+  gap: 7px;
+}
+
+.top_cards {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.top_cards .info_card:last-child {
+  grid-column: 2/4;
+  height: 100%;
+}
+
+.bot_cards {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(3, 1fr);
+}
 .input_group .error_message {
   color: #FF8888;
 }
@@ -241,7 +290,7 @@
 }
 
 .popup_background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -362,13 +411,13 @@ nav .navbar_main .auth_actions {
 nav .navbar_main .navbar_items {
   gap: 42px;
   list-style: none;
-  color: #ECECEC;
 }
-nav .navbar_main .navbar_items li {
-  cursor: pointer;
+nav .navbar_main .navbar_items li .not_active_nav {
   position: relative;
+  color: #ECECEC;
+  text-decoration: none;
 }
-nav .navbar_main .navbar_items li::before {
+nav .navbar_main .navbar_items li .not_active_nav::before {
   content: "";
   position: absolute;
   height: 4px;
@@ -380,8 +429,25 @@ nav .navbar_main .navbar_items li::before {
   opacity: 0;
   transition: opacity 200ms ease-in;
 }
-nav .navbar_main .navbar_items li:hover::before {
+nav .navbar_main .navbar_items li .not_active_nav:hover::before {
   opacity: 1;
+}
+nav .navbar_main .navbar_items li .active_nav {
+  position: relative;
+  color: #ECECEC;
+  text-decoration: none;
+}
+nav .navbar_main .navbar_items li .active_nav::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  border-radius: 10px;
+  background-color: #C69048;
+  opacity: 1;
+  transition: opacity 200ms ease-in;
 }
 
 @media screen and (min-width: 1280px) {
@@ -437,6 +503,47 @@ body {
 .content .main {
   overflow: auto;
   margin-top: 48px;
+}
+
+.app_alert {
+  position: absolute;
+  width: fit-content;
+  max-width: 400px;
+  background-color: #FFFFFF;
+  top: 60px;
+  right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 2px;
+  transition: all 500ms ease-in-out;
+}
+.app_alert .timer_stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #C69048;
+  border-radius: 0px 0px 2px 2px;
+}
+
+.admin_dash_main {
+  gap: 18px;
+}
+.admin_dash_main .deliverers_list {
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.admin_dash_main .meals_section {
+  width: 100%;
+  gap: 20px;
+}
+.admin_dash_main .meals_section .meal_search {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .services_cards {

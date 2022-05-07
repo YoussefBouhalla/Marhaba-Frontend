@@ -19,28 +19,50 @@ nav {
         .navbar_items {
             gap: 42px;
             list-style: none;
-            color: $para_white;
 
             li {
-                cursor: pointer;
-                position: relative;
+                .not_active_nav {
+                    position: relative;
+                    color: $para_white;
+                    text-decoration: none;
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    height: 4px;
-                    width: 100%;
-                    left: 0;
-                    bottom: -4px;
-                    border-radius: 10px;
-                    background-color: $details_color;
-                    opacity: 0;
-                    transition: opacity 200ms ease-in;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        left: 0;
+                        bottom: -4px;
+                        border-radius: 10px;
+                        background-color: $details_color;
+                        opacity: 0;
+                        transition: opacity 200ms ease-in;
+                    }
+
+                    &:hover::before {
+                        opacity: 1;
+                    }
                 }
 
-                &:hover::before {
-                    opacity: 1;
+                .active_nav {
+                    position: relative;
+                    color: $para_white;
+                    text-decoration: none;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        left: 0;
+                        bottom: -4px;
+                        border-radius: 10px;
+                        background-color: $details_color;
+                        opacity: 1;
+                        transition: opacity 200ms ease-in;
+                    }
                 }
+                
             }
         }
     }

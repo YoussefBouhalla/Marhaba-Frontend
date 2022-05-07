@@ -113,3 +113,26 @@
     border: none;
     border-radius: 4px;
 }
+
+.profile_button {
+        height: 28px;
+        padding: 0px 7px;
+        border-radius: 28px;
+        border: none;
+        color: $para_white;
+        transition: all 200ms ease-in;
+        background-color: rgba(123, 123, 123, 0.205);
+
+        .image {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            left: 0;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            background-color:  rgba(123, 123, 123, 0.974) !important;
+        }
+}
