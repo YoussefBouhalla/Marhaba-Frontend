@@ -1,0 +1,77 @@
+@import '../abstracts/variables';
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: calc(100vw - 17px);
+    border-radius: 0px 0px 8px 8px;
+    background-color: $additional_color;
+
+    .navbar_main{
+        padding: 10px 23px;
+
+        .auth_actions {
+            gap: 7px;
+        }
+
+        .navbar_items {
+            gap: 42px;
+            list-style: none;
+
+            li {
+                .not_active_nav {
+                    position: relative;
+                    color: $para_white;
+                    text-decoration: none;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        left: 0;
+                        bottom: -4px;
+                        border-radius: 10px;
+                        background-color: $details_color;
+                        opacity: 0;
+                        transition: opacity 200ms ease-in;
+                    }
+
+                    &:hover::before {
+                        opacity: 1;
+                    }
+                }
+
+                .active_nav {
+                    position: relative;
+                    color: $para_white;
+                    text-decoration: none;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        left: 0;
+                        bottom: -4px;
+                        border-radius: 10px;
+                        background-color: $details_color;
+                        opacity: 1;
+                        transition: opacity 200ms ease-in;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav {
+        .navbar_main {
+            width: 1280px;
+        }
+    }
+  }

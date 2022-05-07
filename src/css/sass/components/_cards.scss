@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+
+.info_card {
+    height: fit-content;
+    border-radius: 8px;
+    background-color: $additional_color;
+    padding: 10px 24px;
+    color: $para_white;
+    border-left: 7px solid $details_color;
+
+    div {
+        gap: 7px;
+    }
+
+}
+
+.top_cards {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    .info_card {
+        @extend .info_card;
+
+        &:last-child {
+            grid-column: 2 / 4;
+            height: 100%;
+        }
+    }
+}
+
+.bot_cards {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .info_card {
+        @extend .info_card
+    }
+}

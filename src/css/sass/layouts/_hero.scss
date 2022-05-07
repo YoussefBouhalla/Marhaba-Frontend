@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+
+.hero_header {
+    background-color: $additional_color;
+    height: 314px;
+    border-radius: 8px;
+    box-shadow: $card_shadow;
+    padding: 26px 41px;
+
+    .intro {
+
+        h1 {
+            color: $details_color;
+        }
+        
+        p {
+            color: $secondary_color;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import '../abstracts//variables';
+
+.title_center {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $color_gradient;
+        border-radius: 4px;
+        bottom: -8px;
+    }
+}
+
+.title_right {
+    position: relative;
+    width: fit-content;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 70%;
+        background: $color_gradient;
+        border-radius: 4px;
+        bottom: -8px;
+    }
+}

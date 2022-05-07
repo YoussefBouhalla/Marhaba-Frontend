@@ -1,0 +1,37 @@
+@import '../abstracts/variables';
+
+.page_main {
+    gap: 18px;
+    .list_section{
+        width: 100%;
+        max-width: 733px;
+        gap: 20px;
+
+        .meal_search {
+            background-color: $secondary_color;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: $card_shadow;
+        }
+
+        .meals_list {
+            gap: 20px;
+
+            .meal_card {
+                width: 100%;
+                margin-left: 7px;
+                max-width: 349px;
+                padding: 12px;
+                background-color: $secondary_color;
+                border-radius: 8px;
+                box-shadow: $card_shadow;
+
+                .image_holder{
+                    height: 165px;
+                    border-radius: 8px;
+                    background-color: bisque;
+                }
+            }
+        }
+    }
+}

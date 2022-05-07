@@ -1,0 +1,72 @@
+@import '../abstracts/variables';
+
+.input_group {
+
+    .error_message {
+        color: $error_color;
+    }
+
+    .input_holder {
+        height: fit-content;
+        border: 1px solid #9f9f9f57;
+        border-radius: 4px;
+        background-color: $input_color;
+
+        .input_icon {
+            height: 100%;
+        }
+
+        hr {
+            transform: rotate(90deg);
+            width: 18px;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            height: 32px;
+            font-size: 10px;
+            font-weight: 500;
+            width: 100%;
+
+            &::placeholder {
+                font-size: 10px;
+                font-weight: 500;
+                color: $placeholder_color;
+            }
+        }
+
+        select {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            height: 32px;
+            font-size: 10px;
+            font-weight: 500;
+            width: 100%;
+            &::placeholder {
+                font-size: 10px;
+                font-weight: 500;
+                color: $placeholder_color;
+            }
+        }
+
+        textarea {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            height: 80px;
+            resize: none;
+            font-size: 10px;
+            font-weight: 500;
+            width: 100%;
+            &::placeholder {
+                font-size: 10px;
+                font-weight: 500;
+                color: $placeholder_color;
+            }
+        }
+    }
+}

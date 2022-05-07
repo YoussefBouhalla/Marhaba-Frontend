@@ -1,0 +1,24 @@
+@import '../abstracts/variables';
+
+.admin_dash_main {
+    gap: 18px;
+
+    .deliverers_list {
+        padding: 15px;
+        box-shadow: $card_shadow;
+        border-radius: 8px;
+        background-color: $secondary_color;
+    }
+
+    .meals_section {
+        width: 100%;
+        gap: 20px;
+        
+        .meal_search {
+            background-color: $secondary_color;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: $card_shadow;
+        }
+    }
+}

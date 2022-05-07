@@ -1,0 +1,138 @@
+@import '../abstracts/variables';
+
+.auth_actions {
+    button {
+        height: 28px;
+        padding: 0px 30px;
+        border-radius: 8px;
+        color: $para_white;
+        border: 2px solid $details_color;
+        transition: all 200ms ease-in;
+
+        &:hover {
+            background-color: $button_hover_color !important;
+            border: 2px solid $button_hover_color !important;
+        }
+
+        &:first-child {
+            background-color: transparent;
+        }
+
+        &:last-child {
+            background-color: $details_color;
+        }
+    }
+}
+
+.login_form {
+    button {
+        color: $secondary_color;
+        background-color: $details_color;
+        border-radius: 4px;
+        border: none;
+        height: 32px;
+        transition: all 200ms ease-in;
+
+        &:hover {
+            background-color: $button_hover_color;
+        }
+    }
+}
+
+.close_button {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    right: -40px;
+    top: 5px;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.341);
+    transition: all 50ms ease-in;
+    &:hover {
+        background-color: rgba(240, 240, 240, 0.6);
+    }
+}
+
+.hero_button {
+    color: $secondary_color;
+    padding: 0 75px ;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: $color_gradient;
+    height: 33px;
+}
+
+.service_card_button {
+    color: $secondary_color;
+    padding: 0 47px ;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background: $color_gradient;
+    height: 28px;
+}
+
+.footer_button {
+    background-color: transparent;
+    padding: 6px 42px;
+    border-radius: 8px;
+    width: fit-content;
+    color: $para_white;
+    border: 2px solid $details_color;
+    transition: all 200ms ease-in;
+}
+
+.round_contact {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    border: 2px solid $input_color;
+    background-color: $details_color;
+    position: absolute;
+    bottom: -23.5px;
+    right: 21px;
+}
+
+.social_button {
+    height: 38px;
+    width: 38px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.order_button {
+    height: 100%;
+    background-color: $details_color;
+    color: $secondary_color;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.profile_button {
+        height: 28px;
+        padding: 0px 7px;
+        border-radius: 28px;
+        border: none;
+        color: $para_white;
+        transition: all 200ms ease-in;
+        background-color: rgba(123, 123, 123, 0.205);
+
+        .image {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            left: 0;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            background-color:  rgba(123, 123, 123, 0.974) !important;
+        }
+}

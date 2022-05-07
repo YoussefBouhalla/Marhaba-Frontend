@@ -1,0 +1,58 @@
+@import '../abstracts/variables';
+footer {
+    padding: 33px;
+    width: calc(100% + 46px);
+    margin: 0px -23px;
+    left: 0;
+    bottom: 0;
+    background-color:$additional_color;
+    border-radius: 8px 8px 0px 0px;
+
+    .contact_us_home {
+        width: 895px;
+
+        .left_section {
+            p {
+                color: $secondary_color;
+            }
+        }
+
+        .right_section {
+            form {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+
+    }
+
+    .footer_bottom {
+        .left_section {
+            .main_list{
+                list-style: none;
+                color: $secondary_color !important;
+                margin-top: 24px !important;
+
+                .pseudo_list {
+                    list-style: inherit;
+                }
+            }
+        }
+
+        .right_section {
+            color: $secondary_color;
+            p{
+                margin: 0 !important;
+
+                &:first-child{
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    .footer_copyright {
+        color: $secondary_color;
+    }
+    
+}

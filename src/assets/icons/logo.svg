@@ -1,0 +1,15 @@
+<svg width="123.849" height="28.314" viewBox="0 0 123.849 28.314">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8b3434"/>
+      <stop offset="1" stop-color="#c69048"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_111" data-name="Group 111" transform="translate(-23.151 -10)">
+    <text id="Marhaba" transform="translate(52 31)" fill="#c69048" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Marhaba</tspan></text>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(37.293 10.737) rotate(45)" stroke="#fff" stroke-width="1" fill="url(#linear-gradient)">
+      <rect width="19" height="20" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="18" height="19" rx="5.5" fill="none"/>
+    </g>
+  </g>
+</svg>

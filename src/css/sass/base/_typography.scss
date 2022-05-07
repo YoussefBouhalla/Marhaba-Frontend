@@ -1,0 +1,14 @@
+$font_sizes : 26px ,24px, 20px, 18px, 14px, 12px, 10px, 8px;
+$font_weights: 400, 500, 600, 700;
+
+@each $size in $font_sizes {
+    .font_#{$size} {
+      font-size: $size;
+    }
+}
+
+@each $weight in $font_weights {
+    .font_#{$weight} {
+      font-weight: $weight;
+    }
+}

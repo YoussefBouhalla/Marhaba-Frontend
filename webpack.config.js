@@ -16,7 +16,22 @@ mode: 'development',
   {
    test: /\.css$/,
    use: ["style-loader", "css-loader"]
-  }
+  },
+  {
+    test: /\.svg/,
+    use: ["@svgr/webpack"]
+  },
+  {
+    test: /\.(png|jpe?g|gif)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
+  },
 ]},
- plugins: [htmlPlugin]
+devServer: {
+  historyApiFallback: true,
+},
+plugins: [htmlPlugin]
 };
